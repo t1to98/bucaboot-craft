@@ -1,0 +1,40 @@
+{% extends "_layout" %}
+
+{% set bodyClasses = 'press-page page-hp' %}
+
+{% block content %}
+
+    <section class="hp-intro">
+
+      <div class="foreground">
+
+        <div class="foreground-inner">
+          <!-- Logo & Intro -->
+
+          <h1 class="logo-h horiz">
+            <a href="/">
+            <i class="logo-h-txt a11y-only">Buca Boot</i>
+              <img class="logo-img logo-img-svg" src="img/icons/logo-wht-md-horiz.svg" />
+              </a>
+          </h1>
+
+          <h1 class="section-h">Press<h1>
+
+          <ul class="press-list">
+            {% for entry in craft.entries.section('press').find() %}
+              <li class="pressItem">
+                <a class="pressItem-link" href="{{ entry.externalLink }}" target="_blank">
+                  <h2 class="h2 pressItem-h">{{ entry.title }}</h2>
+                  <h3 class="txt pressItem-txt">{{ entry.headline }}</h3>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div> <!-- /foreground-inner -->
+
+      </div> <!-- /foreground -->
+
+    </section> <!-- /hp-intro -->
+
+{% endblock content %}

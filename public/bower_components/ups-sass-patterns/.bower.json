@@ -1,0 +1,13 @@
+{
+  "name": "ups-sass-patterns",
+  "homepage": "https://github.com/Upstatement/ups-sass-patterns",
+  "_release": "c440cc15cc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c440cc15cc57941984df15e522c27d6e3bf55104"
+  },
+  "_source": "git@github.com:Upstatement/ups-sass-patterns.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:Upstatement/ups-sass-patterns.git"
+}

@@ -1,0 +1,462 @@
+// =============================================
+
+// Homepage
+
+// =============================================
+
+
+// --------------------------------------------
+// Homepage Topper
+// --------------------------------------------
+
+.page-hp {
+  position: relative;
+}
+
+.resp-img {
+  max-width: 100%;
+}
+
+a.link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hp-intro {
+  background: #000 image-url('bucaboot-tight-bw.jpg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.foreground {
+  margin: auto;
+  padding: 30px;
+  color: #fff;
+  @include rgba-bg(black, .5);
+  max-width: 650px;
+  transition: all .2s ease-in;
+  @media (min-width: $break-sm) {
+    padding-top: 60px;
+  }
+}
+
+.foreground-inner {
+  margin: auto;
+  max-width: 450px;
+}
+
+.logo-h {
+  font: 700 em(50) $sans;
+  max-width: 70%;
+  margin: auto;
+  @include user-select;
+  @media (min-width: $break-sm) {
+    max-width: 400px;
+    &.horiz {
+      max-width: none;
+    }
+  }
+}
+
+.no-svg {
+  .logo-h {
+    display: block;
+    height: 0;
+    padding-top: 45%;
+    background: transparent image-url('icons/logo-wht-lg.png') 50% 50% no-repeat;
+    @include background-size(100%);
+    @media (min-width: $break-sm) {
+      padding-top: 64%;
+    }
+    @media (min-width: 520px) {
+      padding-top: 56.5%;
+    }
+  }
+  .logo-img-svg {
+    display: none;
+  }
+}
+
+.logo-img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.intro-txt {
+  font: 500 em(20)/140% $sans;
+  text-align: center;
+  margin-bottom: 40px;
+  @media (min-width: $break-sm) {
+    font-size: em(27);
+  }
+  > p {
+    margin-bottom: 20px;
+  }
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro-arrow {
+  display: block;
+  @include svg('arrow-down', no-cover);
+  @include background-size(75%);
+  width: 90%;
+  height: 0;
+  padding-bottom: 12%;
+  max-width: 100px;
+  margin: 0 auto 90px;
+  @include opacity(.7);
+  transition: all .2s ease-in;
+}
+
+.hover-anim {
+  @include animation(hover 2s 3);
+}
+
+// Fade In & Down
+@include keyframes(hover) {
+  0%, 100%   { @include translate3d(0, -15px, 0); }
+  55%    { @include translate3d(0, 15px, 0); }
+}
+
+
+.l-narrow {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-large {
+  font: 700 em(17)/120% $sans;
+  text-align: center;
+
+  position: relative;
+  top: 0;
+  display: block;
+  padding: 20px 10px;
+  margin-bottom: 65px;
+  background-color: $red;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: shade($red, 30%) 0 3px 0;
+  @include border-radius(12px);
+  @include text-shadow(rgba(0,0,0,.3) 1px 2px 3px);
+  @include user-select;
+  transition: all .2s;
+  &:hover {
+    top: -3px;
+    @include box-shadow(shade($red, 30%) 0 6px 0);
+  }
+  @media (min-width: $break-sm) {
+    font-size: em(23);
+    padding: 20px 30px;
+    margin-bottom: 100px;
+  }
+}
+
+.btn-large--light {
+  @extend .btn-large;
+  background-color: #FFF;
+  color: #000;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 3px 0;
+  &:hover {
+    box-shadow: (rgba(255,255,255,.5) 0 6px 0);
+  }
+}
+
+
+// --------------------------------------------
+// Features
+// --------------------------------------------
+
+.site-width {
+  padding-left: $site-padding;
+  padding-right: $site-padding;
+}
+
+.l-feature {
+  padding: 60px $site-padding;
+  border-bottom: 1px solid #e5e5e5;
+
+  @include mq($break-sm) {
+    padding: 80px 40px;
+  }
+
+  @include mq($break-lg) {
+    padding: 100px 50px;
+  }
+
+}
+
+
+.l-feature-inner {
+  max-width: 600px;
+  margin: auto;
+}
+
+.l-feature-cols,
+.l-feature-cols-flip {
+  @extend .l-feature-inner;
+  @include mq($break-lg) {
+    max-width: 960px;
+  }
+}
+
+@include mq($break-lg) {
+  .l-feature-cols {
+    @include ui-grid-2(50%, 50%, 0);
+    .ui-block-1 {
+      margin-top: -30px;
+      padding-right: 50px;
+    }
+  }
+  .l-feature-cols-flip {
+    @include ui-grid-rl(50%, 50%, 0);
+    .ui-block-1 {
+      margin-top: -30px;
+      padding-left: 50px;
+    }
+  }
+
+} //mq
+
+.slide-lifestyle,
+.slide-weather,
+.slide-secure {
+  .h2 {
+    color: $red;
+  }
+}
+
+.slide-handles {
+  position: relative;
+  padding-bottom: 75%;
+  margin-bottom: 0;
+  background: transparent image-url('slide-handles.jpg') 50% 100% no-repeat;
+  @include background-size(contain);
+  border-bottom: 0;
+
+  .skrollr &  {
+    @include mq($footer-fixes) {
+      height: 2000px;
+      padding-bottom: 0;
+      background-attachment: fixed;
+      @include background-size(cover);
+    }
+  }
+}
+
+.slide-summer {
+  text-align: center;
+  .txt {
+    display: block;
+    margin-bottom: 15px;
+    @include mq($break-sm) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+// --------------------------------------------
+// Homepage
+// --------------------------------------------
+
+
+.video-btn {
+  margin-bottom: 25px;
+}
+
+.l-feature-cols--secure {
+  margin-bottom: 60px;
+}
+
+.order-mod-bottom {
+  text-align: center;
+}
+
+.order-btn-bottom {
+  margin-bottom: 16px;
+}
+
+$bp--color-layout: 500px;
+
+.slide-colors {
+  padding-top: 80px;
+
+  @include mq($break-sm, $break-lg) {
+    padding-bottom: 40px;
+  }
+  @include mq($break-lg) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
+.l-colors {
+  @include mq($bp--color-layout) {
+    @include media-grid(3, 20px, '.color');
+  }
+}
+
+.color {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include mq($bp--color-layout) {
+    margin-bottom: 0;
+  }
+}
+
+.color-img {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 12px;
+  top: 0;
+  transition: all .2s ease-in;
+
+  .color:hover & {
+    top: -4px;
+  }
+}
+
+.color-h {
+  font: 700 21px $sans;
+}
+
+.slide-colors {
+  position: relative;
+}
+
+.slide-colors-h {
+  font: 500 16px $sans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: $navy;
+  border-top: 3px solid $navy;
+  border-bottom: 1px solid $navy;
+  @include absolute(-1px 0 n 0);
+}
+
+
+// --------------------------------------------
+// Gallery
+// --------------------------------------------
+
+
+
+
+
+// --------------------------------------------
+// Slide Footer
+// --------------------------------------------
+//
+// - Slides up into place over final slide
+//
+// --------------------------------------------
+
+
+.slide-ftr {
+  text-align: center;
+  max-width: none;
+  background-color: #000;
+
+  .skrollr & {
+    @include mq($footer-fixes) {
+      @include absolute(n 0 0 0);
+      min-height: 800px;
+      background-color: rgba(0,0,0,.5);
+      max-width: 650px;
+    }
+  }
+}
+
+.slide-ftr-btm {
+  .skrollr &  {
+    @include mq($footer-fixes) {
+      @include absolute(n 0 0 0);
+    }
+  }
+}
+
+.contact-h {
+  font-weight: 700;
+}
+
+.contact-txt {
+  margin-bottom: 12px;
+}
+
+.ftr-infinity-logo {
+  display: block;
+  width: 60px;
+  height: 35px;
+  margin: 0 auto 20px;
+  @include svg('infinity-wht-md');
+}
+
+.ftr-tagline-mod {
+  margin-bottom: 60px;
+}
+
+.ftr-tagline {
+  font: 500 em(21)/120% $sans;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  @include mq($break-sm) {
+    font-size: em(28);
+  }
+}
+
+
+// --------------------------------------------
+// Social Icons
+// --------------------------------------------
+
+.social-list {
+    text-align: justify;
+    font-size: 0.1px; // Hide whitespace between elements
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  &:after {
+    @include content;
+      display: inline-block;
+      width: 100%;
+  }
+}
+
+.social-item {
+   display: inline-block;
+  width: 36px;
+  > a {
+    top: 0;
+    position: relative;
+    display: block;
+    @include size(36px);
+    @include opacity(.85);
+    transition: all .125s ease-in;
+    &:hover {
+      top: -2px;
+      @include opacity(1);
+    }
+  }
+  &.twitter > a {
+    @include svg('twitter-wht');
+  }
+  &.facebook > a {
+    @include svg('facebook-wht');
+  }
+  &.google > a {
+    @include svg('google-wht');
+  }
+}

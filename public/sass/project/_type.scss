@@ -1,0 +1,64 @@
+// =============================================
+
+// Typography
+
+// =============================================
+
+
+// --------------------------------------------
+// Links
+// --------------------------------------------
+
+// Your standard link style. Create more as needed
+@mixin default-link {
+	@include trans;
+	color: $link;
+	&:hover {
+		color: darken($link, 10%);
+	}
+}
+
+.default-link {
+	@include default-link;
+}
+
+
+// --------------------------------------------
+// Typography
+// --------------------------------------------
+
+.h2 {
+  font: 300 em(28)/120% $sans;
+  color: $navy;
+  margin-bottom: 8px;
+  @include mq($break-sm) {
+    font-size:em(36);
+  }
+}
+
+.highlight {
+  color: $red;
+}
+
+.txt {
+  font: 300 em(18)/150% $sans;
+  color: #666;
+  @include mq($break-sm) {
+    font-size:em(21);
+  }
+}
+
+.caption-txt {
+  font: 500 em(16)/140% $sans;
+  margin-bottom: 40px;
+}
+
+.section-h {
+  display: block;
+  margin-bottom: 10px;
+
+  font: 700 em(16)/120% $sans;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include text-shadow(rgba(0,0,0,.3) 1px 2px 3px);
+}

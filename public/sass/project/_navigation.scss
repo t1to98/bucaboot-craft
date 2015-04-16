@@ -1,0 +1,114 @@
+// =============================================
+
+// Navigation
+
+// =============================================
+
+.siteNav {
+  display: block;
+  background-color: #000;
+  padding-left: $nav-padding--small;
+  padding-right: $nav-padding--small;
+  @include user-select;
+  @include pie-clearfix;
+  @include mq($bp--full-nav) {
+    padding-left: $nav-padding;
+    padding-right: $nav-padding;
+  }
+}
+
+.siteNav--home {
+  display: block;
+  width: 50px;
+  height: 56px;
+  float: left;
+  padding: 16px 10px 16px 0;
+  opacity: 1;
+  transition: opacity .2s ease-in;
+  &:hover {
+    opacity: .75;
+  }
+  @include mq($bp--full-nav) {
+    width: 60px;
+    padding-left: 16px;
+  }
+}
+
+.siteNav--buy {
+  display: block;
+  float: right;
+
+  font: 700 14px $sans;
+  padding: 8px 10px;
+  margin-top: 12px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  @include trans;
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+  }
+
+  @include mq($bp--full-nav) {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+
+.siteNav--links {
+  // clear: both;
+
+  // Show/Hide navigation
+  // display: none;
+  // .siteNav-active & {
+  //  display: block;
+  // }
+
+  // @include mq($bp--full-nav) {
+  //  display: block;
+  //  clear: none;
+  //  @include pie-clearfix;
+  // }
+}
+
+.siteNav--navTrigger,
+.siteNav--link {
+  font: 700 14px $sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 19px 10px $nav-padding;
+  transition: all .2s ease-in;
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+  }
+
+  @include mq($bp--full-nav) {
+    padding-left: $nav-padding;
+    padding-right: $nav-padding;
+  }
+}
+
+.siteNav--navTrigger {
+  display: none;
+  float: left;
+
+  // @include mq($bp--full-nav) {
+  //  display: none;
+  // }
+}
+
+.siteNav--link {
+  // display: block;
+  // border-top: 1px solid rgba(255,255,255,.3);
+
+  // @include mq($bp--full-nav) {
+    float: left;
+  //  border-top: 0;
+  // }
+}

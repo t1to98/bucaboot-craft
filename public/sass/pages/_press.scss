@@ -1,0 +1,32 @@
+// =============================================
+
+// Press Page
+
+// =============================================
+
+$press-border: 1px solid rgba(255,255,255,.5);
+$press-spacing: 26px;
+
+.press-list {
+  border-top: $press-border;
+}
+
+.pressItem-link {
+  display: block;
+  padding: $press-spacing 20px;
+  border-bottom: $press-border;
+  transition: all .2s ease-in;
+  &:hover {
+    background-color: rgba(0,0,0,.35);
+  }
+}
+
+.pressItem-h {
+  color: #fff;
+}
+
+.pressItem-txt {
+  color: #efefef;
+}
+
+

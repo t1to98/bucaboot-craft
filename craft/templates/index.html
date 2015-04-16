@@ -1,0 +1,230 @@
+{#
+ # Homepage template
+ # ---------------
+ #
+ # When this template gets loaded, it will be because someone has accessed
+ # http://yoursite.com/ (without any URI). Craft checks to see if you have
+ # a Single section set to be the Homepage (as you do, by default), and
+ # loads the section’s Template (this file). A special ‘entry’ variable
+ # will already be set for you, assigned to the Homepage entry.
+ #
+ # It's worth noting that even if you didn't have a Homepage Single section,
+ # as long as this template remains at craft/templates/index.html, it
+ # would still be the one to get loaded when accessing http://yoursite.com/,
+ # albeit without an ‘entry’ variable already set for you.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://buildwithcraft.com/docs/routing
+ #}
+
+{% extends "_layout" %}
+
+{% set bodyClasses = 'page-hp' %}
+
+{% block nav %}
+  {# Remove the top nav, because it appears below #}
+{% endblock nav %}
+
+{% block content %}
+<section class="hp-intro">
+  <div class="foreground">
+
+    <div class="foreground-inner">
+      <!-- Logo & Intro -->
+
+      <h1 class="logo-h">
+        <i class="logo-h-txt a11y-only">Buca Boot</i>
+          <img class="logo-img logo-img-svg" src="img/icons/logo-wht-lg.svg" />
+      </h1>
+
+      <h2 class="intro-txt">Secure, flexible storage for&nbsp;the practical&nbsp;biker. Stop&nbsp;worrying about&nbsp;your&nbsp;stuff&nbsp;&amp;&nbsp;go!</h2>
+
+      <!-- Video Button -->
+      <a class="btn-large l-narrow video-btn js-popup-iframe" href="https://vimeo.com/73281165" target="_blank">Watch the video</a>
+
+      <!-- Pre-Order -->
+      <a class="btn-large--light order-btn l-narrow" data-celery="54696b734457df05003627e9" data-celery-version="v2" href="https://shop.trycelery.com/embed/54696b734457df05003627e9?index=&domain=www.bucaboot.com">Pre-Order</a>
+
+      <!-- Down Arrow -->
+      <i class="intro-arrow"></i>
+
+    </div> <!-- /foreground-inner -->
+
+  </div> <!-- /foreground -->
+</section> <!-- /hp-intro -->
+
+{# Site Navigation #}
+{% include "partials/nav.html" %}
+
+<!-- Slide: Lifestyle -->
+<section class="l-feature slide-lifestyle">
+  <div class="l-feature-cols">
+    <div class="ui-block-1">
+      <img class="resp-img" src="img/slide-flexible.gif" alt="Animation showing the Buca Boot opening (to carry big stuff) and closing (to keep small things safe and dry)." />
+    </div> <!-- /ui-block-1 -->
+    <div class="ui-block-2">
+      <h2 class="h2">Adapts to Your&nbsp;Lifestyle</h2>
+      <p class="txt">The Buca Boot opens to carry big things like groceries and locks to keep your smaller stuff safe. Need more space? No problem. Side panniers are built&nbsp;right&nbsp;in.</p>
+    </div> <!-- /ui-block-2 -->
+  </div> <!-- /l-feature-inner -->
+</section> <!-- /l-feature -->
+
+<!-- Slide: Weather -->
+<section class="l-feature slide-weather">
+  <div class="l-feature-cols-flip">
+    <div class="ui-block-1">
+      <img class="resp-img" src="img/slide-weather.gif" alt="The Buca Boot is weatherproof." />
+    </div> <!-- /ui-block-1 -->
+    <div class="ui-block-2">
+      <h2 class="h2">Works in any&nbsp;Weather</h2>
+      <p class="txt">Leave it outside. Ride in the rain. Heck, put it out in the snow. The Boot is made from molded plastic and has a gasketed lid to keep your stuff safe&nbsp;&amp;&nbsp;dry.</p>
+    </div> <!-- /ui-block-2 -->
+  </div> <!-- /l-feature-inner -->
+</section> <!-- /l-feature -->
+
+
+<!-- Slide: Secure -->
+<section class="l-feature slide-secure">
+  <div class="l-feature-cols l-feature-cols--secure">
+    <div class="ui-block-1">
+      <img class="resp-img" src="img/slide-secure.jpg" alt="The Buca Boot is as secure as a car trunk." />
+    </div> <!-- /ui-block-1 -->
+    <div class="ui-block-2">
+      <h2 class="h2">Secures Your Stuff</h2>
+      <p class="txt">Our unique hinge mechanism securely locks the lid in place. It attaches to any standard bike rack from the inside so it can’t be removed without unlocking and opening the Boot.</p>
+    </div> <!-- /ui-block-2 -->
+  </div> <!-- /l-feature-inner -->
+
+  <div class="order-mod-bottom">
+    <a class="btn-large order-btn-bottom l-narrow" data-celery="54696b734457df05003627e9" data-celery-version="v2" href="https://shop.trycelery.com/embed/54696b734457df05003627e9?index=&domain=www.bucaboot.com">Pre-Order</a>
+    <h4 class="txt">Available June 2015!</h4>
+  </div> <!-- /order-mod-bottom -->
+
+</section> <!-- /l-feature -->
+
+
+<!-- Slide: Gallery -->
+<section class="l-feature slide-gallery">
+
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1 <img class="swiper-img" src="img/gallery/gallery--flowers.jpg" alt="" /></div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+</section> <!-- /slide-gallery -->
+
+
+
+<!-- Slide: Secure -->
+<section class="l-feature slide-colors">
+  <h3 class="slide-colors-h">Choose from Three Colors</h3>
+
+  <div class="l-colors">
+    <a class="color" data-celery="54696b734457df05003627e9" data-celery-version="v2">
+      <img class="color-img" src="img/color-swatch--navy2x.png"/>
+      <h6 class="color-h">Navy</h6>
+    </a> <!-- /color -->
+    <a class="color" data-celery="54696b734457df05003627e9" data-celery-version="v2">
+      <img class="color-img" src="img/color-swatch--tomato2x.png"/>
+      <h6 class="color-h">Tomato</h6>
+    </a> <!-- /color -->
+    <a class="color" data-celery="54696b734457df05003627e9" data-celery-version="v2">
+      <img class="color-img" src="img/color-swatch--steel2x.png"/>
+      <h6 class="color-h">Steel</h6>
+    </a> <!-- /color -->
+  </div> <!-- /l-color -->
+
+</section> <!-- /l-feature -->
+
+
+
+
+<!-- Slide: Handles -->
+<section class="l-feature slide-handles"
+     data-bottom-top="background-position: 50% 900px;"
+     data-center="background-position: 50% -100px;">
+
+  <!-- Slide: Summer -->
+  <section class="slide-summer site-width">
+    <div class="l-feature-inner"
+       data-600-bottom="transform: translate3d(0px, 550px, 0);"
+       data--200-top="transform: translate3d(0px, -100px, 0);">
+
+      <h2 class="h2">Stay in the Know</h2>
+
+      <!-- Email Signup -->
+      <div id="mc_embed_signup" class="mc-mod-dark mc-mod-signup l-narrow">
+        <form action="http://bucaboot.us7.list-manage1.com/subscribe/post?u=5752a95bb79b69fc89b39e37a&amp;id=31f4699415" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <div class="mc-field-group">
+          <label class="txt" for="mce-EMAIL">with all the latest Buca Boot news</label>
+          <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email mc-input" id="mce-EMAIL">
+        </div>
+          <div id="mce-responses" class="mce-responses">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <input type="submit" value="&rarr;" name="subscribe" id="mc-embedded-subscribe" class="mc-submit">
+        </form>
+
+      </div> <!-- /mc-mod-dark -->
+
+    </div> <!-- /l-feature-inner -->
+  </section> <!-- /l-feature-->
+
+</section> <!-- /l-feature -->
+
+
+<footer class="slide-ftr foreground">
+  <div class="foreground-inner">
+
+    <div class="ftr-tagline-mod">
+      <i class="ftr-infinity-logo"></i>
+      <h5 class="ftr-tagline">Hello Freedom</h5>
+    </div> <!-- /ftr-tagline-mod -->
+
+    <div class="slide-ftr-btm">
+      <!-- Social Icons -->
+      <ul class="social-list">
+        <li class="social-item twitter"><a href="https://twitter.com/bucaboot" target="_blank">Twitter</a></li>
+        <li class="social-item facebook"><a href="https://www.facebook.com/bucaboot" target="_blank">Facebook</a></li>
+        <li class="social-item google"><a href="https://plus.google.com/103106248903301572487" rel="publisher" target="_blank">Google Plus</a></li>
+      </ul>
+
+      <dl class="contact-mod caption-txt">
+        <dt class="contact-h">Contact</dt>
+        <dd class="contact-txt"><a class="link" href="mailto:hello@bucaboot.com">hello@bucaboot.com</a></dd>
+        <dt class="contact-h">Wholesale Orders</dt>
+        <dd class="contact-txt"><a class="link" href="mailto:wholesale@bucaboot.com">wholesale@bucaboot.com</a></dd>
+      </dl>
+
+    </div> <!-- /slide-ftr-btm -->
+
+  </div> <!-- /foreground-inner -->
+</footer> <!-- /slide-ftr -->
+
+{% endblock content %}
+
+
+{% block scripts %}
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="/bower_components/skrollr/dist/skrollr.min.js"></script>
+    <script src="/bower_components/jquery.inview/jquery.inview.min.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="/js/homepage.js"></script>
+{% endblock scripts %}

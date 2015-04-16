@@ -1,0 +1,51 @@
+//
+// Mailchimp Signup
+//
+
+$mc-height: 45px;
+
+.mc-mod-dark {
+  position: relative;
+}
+
+.mc-input,
+.mc-submit {
+  @include input-default;
+}
+
+.mc-input {
+  font: normal em(16)/120% $sans;
+  color: #fff;
+  @include placeholder-state(rgba(255,255,255,.75));
+
+  display: block;
+  width: 100%;
+  height: $mc-height;
+  padding: 12px;
+  border-bottom-color: #fff; //Fallback
+  border-bottom: 1px solid rgba(255,255,255,.65);
+  @include rgba-bg(black, .5);
+  @include border-radius(2px);
+}
+
+.mc-submit {
+  display: block;
+  color: #000;
+  @include size($mc-height - 10);
+  @include absolute(n 5px 5px n);
+  @include rgba-bg(white, .5);
+  transition: background-color .2s;
+  &:hover {
+    @include rgba-bg(white, .75);
+  }
+}
+
+.logo-h,
+.mc-mod-dark,
+.social-list {
+  margin-bottom: 40px;
+
+  @media (min-width: $break-sm) {
+    margin-bottom: 60px;
+  }
+}
