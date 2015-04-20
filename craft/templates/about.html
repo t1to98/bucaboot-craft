@@ -4,25 +4,26 @@
 
 {% block content %}
 
-    <section class="hp-intro">
+  <div class="section-topper">
+    <div class="txt-width">
+      <h1 class="section-topper-h">About</h1>
+    </div>
+  </div> <!-- /section-topper -->
 
-      <div class="foreground">
+  <div class="txt-width">
 
-        <div class="foreground-inner">
 
-          <!-- Logo & Intro -->
-          <h1 class="section-h">About<h1>
+      {% for entry in craft.entries.section('about') %}
+      <div class="article-txt article-txt--about">
+      {{ entry.body }}
+      </div>
+      {% endfor %}
 
-            {% for entry in craft.entries.section('about') %}
-
-            {{ entry.body }}
-
-            {% endfor %}
-
-        </div> <!-- /foreground-inner -->
-
-      </div> <!-- /foreground -->
-
-    </section> <!-- /hp-intro -->
+  </div> <!-- /txt-width -->
 
 {% endblock content %}
+
+{% block scripts %}
+  <script src="/bower_components/skrollr/dist/skrollr.min.js"></script>
+  <script src="/bower_components/jquery.inview/jquery.inview.min.js"></script>
+{% endblock scripts %}

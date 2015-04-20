@@ -1222,6 +1222,24 @@ body {
   }
 }
 
+.article-txt {
+  font: 300 1.38462em/170% "Raleway", Arial, Helvetica, Verdana, sans-serif;
+}
+@media (min-width: 420px) {
+  .article-txt {
+    font-size: 1.61538em;
+  }
+}
+.article-txt > * + * {
+  margin-top: 24px;
+}
+.article-txt > * + h1,
+.article-txt > * + h2,
+.article-txt > * + h3,
+.article-txt > * + h4 {
+  margin-top: 36px;
+}
+
 .caption-txt {
   font: 500 1.23077em/140% "Raleway", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 40px;
@@ -1234,6 +1252,71 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 2px 3px;
+}
+
+.txt-width {
+  max-width: 620px;
+  margin: 0 20px;
+}
+@media (min-width: 660px) {
+  .txt-width {
+    margin: auto;
+  }
+}
+
+.section-topper {
+  position: relative;
+  background: #000 url('/img/bucaboot-tight-bw.jpg?1379481978') no-repeat 50% 0%;
+  background-size: cover;
+  margin-bottom: 60px;
+  height: 120px;
+  height: 25vh;
+}
+@media (min-width: 420px) {
+  .section-topper {
+    height: 300px;
+    height: 30vh;
+  }
+}
+@media (min-width: 768px) {
+  .section-topper {
+    height: 400px;
+    height: 40vh;
+  }
+}
+.section-topper:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1f2034;
+  opacity: .8;
+  mix-blend-mode: multiply;
+}
+
+.section-topper-h {
+  position: absolute;
+  z-index: 1;
+  bottom: -12px;
+  font: 100 6.15385em "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  line-height: 100%;
+  color: #fff;
+  opacity: .4;
+}
+@media (min-width: 420px) {
+  .section-topper-h {
+    font-size: 120px;
+    bottom: -18px;
+  }
+}
+@media (min-width: 768px) {
+  .section-topper-h {
+    font-size: 150px;
+    bottom: -23px;
+  }
 }
 
 .siteNav {
@@ -1962,6 +2045,10 @@ a.link:hover {
 }
 
 .pressItem-txt {
+  color: #efefef;
+}
+
+.article-text--about {
   color: #efefef;
 }
 

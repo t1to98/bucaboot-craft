@@ -48,6 +48,25 @@
   }
 }
 
+.article-txt {
+  font: 300 em(18)/170% $sans;
+  @include mq($break-sm) {
+    font-size:em(21);
+  }
+
+  > * + * {
+    margin-top: 24px;
+  }
+
+  > * + h1,
+  > * + h2,
+  > * + h3,
+  > * + h4 {
+    margin-top: 36px;
+  }
+
+}
+
 .caption-txt {
   font: 500 em(16)/140% $sans;
   margin-bottom: 40px;

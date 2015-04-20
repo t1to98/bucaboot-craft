@@ -1,0 +1,60 @@
+// =============================================
+
+// Layout
+
+// =============================================
+
+.txt-width {
+  max-width: 620px;
+  margin: 0 20px;
+  @include mq(660px) {
+    margin: auto;
+  }
+}
+
+.section-topper {
+  position: relative;
+  background: #000 image-url('bucaboot-tight-bw.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  margin-bottom: 60px;
+  height: 120px;
+  height: 25vh;
+
+  @include mq($break-sm) {
+    height: 300px;
+    height: 30vh;
+  }
+
+  @include mq($break-md) {
+    height: 400px;
+    height: 40vh;
+  }
+
+  &:after {
+    @include pseudo(0 0 0 0);
+    background-color: $blue-dark;
+    opacity: .8;
+    mix-blend-mode: multiply;
+  }
+}
+
+.section-topper-h {
+  position: absolute;
+  z-index: 1;
+  bottom: -12px;
+
+  font: 100 em(80) $sans;
+  line-height: 100%;
+  color: #fff;
+  opacity: .4;
+
+  @include mq($break-sm) {
+    font-size: 120px;
+    bottom: -18px;
+  }
+
+  @include mq($break-md) {
+    font-size: 150px;
+    bottom: -23px;
+  }
+}
