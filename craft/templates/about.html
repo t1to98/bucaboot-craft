@@ -1,0 +1,28 @@
+{% extends "_layout" %}
+
+{% set bodyClasses = 'about-page' %}
+
+{% block content %}
+
+    <section class="hp-intro">
+
+      <div class="foreground">
+
+        <div class="foreground-inner">
+
+          <!-- Logo & Intro -->
+          <h1 class="section-h">About<h1>
+
+            {% for entry in craft.entries.section('about') %}
+
+            {{ entry.body }}
+
+            {% endfor %}
+
+        </div> <!-- /foreground-inner -->
+
+      </div> <!-- /foreground -->
+
+    </section> <!-- /hp-intro -->
+
+{% endblock content %}
