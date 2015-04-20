@@ -10,7 +10,11 @@
       loop: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      spaceBetween: 30
+      spaceBetween: 30,
+      // Disable preloading of all images
+      preloadImages: false,
+      // Enable lazy loading
+      lazyLoading: true
     })
 
 })(jQuery);
