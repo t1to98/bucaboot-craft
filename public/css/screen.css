@@ -1386,6 +1386,26 @@ body {
   }
 }
 
+.siteNav--links {
+  clear: both;
+  display: none;
+}
+.siteNav-active .siteNav--links {
+  display: block;
+}
+@media (min-width: 500px) {
+  .siteNav--links {
+    display: block;
+    clear: none;
+    *zoom: 1;
+  }
+  .siteNav--links:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .siteNav--navTrigger,
 .siteNav--link {
   font: 700 14px "Raleway", Arial, Helvetica, Verdana, sans-serif;
@@ -1410,12 +1430,27 @@ body {
 }
 
 .siteNav--navTrigger {
-  display: none;
+  display: block;
   float: left;
+}
+.siteNav--navTrigger:hover {
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .siteNav--navTrigger {
+    display: none;
+  }
 }
 
 .siteNav--link {
-  float: left;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 500px) {
+  .siteNav--link {
+    float: left;
+    border-top: 0;
+  }
 }
 
 .page-hp {

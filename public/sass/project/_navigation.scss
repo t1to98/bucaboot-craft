@@ -59,19 +59,19 @@
 
 
 .siteNav--links {
-  // clear: both;
+  clear: both;
 
   // Show/Hide navigation
-  // display: none;
-  // .siteNav-active & {
-  //  display: block;
-  // }
+  display: none;
+  .siteNav-active & {
+   display: block;
+  }
 
-  // @include mq($bp--full-nav) {
-  //  display: block;
-  //  clear: none;
-  //  @include pie-clearfix;
-  // }
+  @include mq($bp--full-nav) {
+   display: block;
+   clear: none;
+   @include pie-clearfix;
+  }
 }
 
 .siteNav--navTrigger,
@@ -95,20 +95,24 @@
 }
 
 .siteNav--navTrigger {
-  display: none;
+  display: block;
   float: left;
 
-  // @include mq($bp--full-nav) {
-  //  display: none;
-  // }
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include mq($bp--full-nav) {
+   display: none;
+  }
 }
 
 .siteNav--link {
-  // display: block;
-  // border-top: 1px solid rgba(255,255,255,.3);
+  display: block;
+  border-top: 1px solid rgba(255,255,255,.3);
 
-  // @include mq($bp--full-nav) {
+  @include mq($bp--full-nav) {
     float: left;
-  //  border-top: 0;
-  // }
+    border-top: 0;
+  }
 }
