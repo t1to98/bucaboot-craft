@@ -412,6 +412,7 @@ $configArray = array(
 		'app.tasks.FindAndReplaceTask',
 		'app.tasks.GeneratePendingTransformsTask',
 		'app.tasks.ITask',
+		'app.tasks.LocalizeRelationsTask',
 		'app.tasks.ResaveAllElementsTask',
 		'app.tasks.ResaveElementsTask',
 		'app.tests.BaseTest',
