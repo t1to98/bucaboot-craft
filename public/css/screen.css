@@ -1281,6 +1281,16 @@ body {
   }
 }
 
+.content-width {
+  max-width: 940px;
+  margin: 0 20px;
+}
+@media (min-width: 980px) {
+  .content-width {
+    margin: auto;
+  }
+}
+
 .section-topper {
   position: relative;
   background: #000 url('/img/bucaboot-tight-bw.jpg?1379481978') no-repeat 50% 0%;
@@ -1388,6 +1398,10 @@ body {
     max-height: 620px;
     top: 45px;
   }
+}
+
+.page-hero-img {
+  max-width: 100%;
 }
 
 .siteNav {
@@ -2153,6 +2167,316 @@ a.link:hover {
 
 .article-text--about {
   color: #efefef;
+}
+
+.team {
+  background-color: #1f2034;
+  color: #fff;
+}
+
+.team-founder-overline {
+  font: 700 14px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00bbd6;
+  margin-bottom: 4px;
+}
+@media (min-width: 850px) {
+  .team-founder-overline {
+    font-size: 15px;
+  }
+}
+
+.team-founder-title {
+  font: 700 21px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+@media (min-width: 850px) {
+  .team-founder-title {
+    font-size: 24px;
+  }
+}
+
+.team-founder-text {
+  font: 500 16px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  line-height: 150%;
+  max-width: 620px;
+}
+@media (min-width: 850px) {
+  .team-founder-text {
+    font-size: 18px;
+  }
+}
+
+.team-partner-overline {
+  font: 700 12px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00bbd6;
+  margin-bottom: 4px;
+}
+
+.team-partner-title {
+  font: 700 17px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.team-partner-text {
+  font: 500 14px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  line-height: 150%;
+  max-width: 620px;
+}
+
+.team {
+  padding: 30px 0;
+  margin: 60px 0;
+}
+
+.team-founder {
+  padding-bottom: 40px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .team-founder {
+    text-align: left;
+  }
+}
+@media (min-width: 600px) and (max-width: 849px) {
+  .team-founder {
+    *zoom: 1;
+    display: table;
+  }
+  .team-founder:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .team-founder > .art-bd {
+    display: table-cell;
+    width: 200px;
+    margin: 0;
+  }
+  .team-founder > .art-bd > img,
+  .team-founder > .art-bd > .art {
+    width: 100%;
+    max-width: 100%;
+  }
+  .team-founder > .txt-bd {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+  }
+  .lt-ie8 .team-founder > .art-bd,
+  .lt-ie8 .team-founder > .txt-bd {
+    display: block;
+  }
+  .lt-ie8 .team-founder > .art-bd {
+    width: 200px;
+    float: left;
+  }
+  .lt-ie8 .team-founder > .txt-bd {
+    margin-left: 240px;
+  }
+}
+@media (min-width: 850px) {
+  .team-founder {
+    *zoom: 1;
+    display: table;
+  }
+  .team-founder:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .team-founder > .art-bd {
+    display: table-cell;
+    width: 300px;
+    margin: 0;
+  }
+  .team-founder > .art-bd > img,
+  .team-founder > .art-bd > .art {
+    width: 100%;
+    max-width: 100%;
+  }
+  .team-founder > .txt-bd {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+  }
+  .lt-ie8 .team-founder > .art-bd,
+  .lt-ie8 .team-founder > .txt-bd {
+    display: block;
+  }
+  .lt-ie8 .team-founder > .art-bd {
+    width: 300px;
+    float: left;
+  }
+  .lt-ie8 .team-founder > .txt-bd {
+    margin-left: 340px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-team-founder-img {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+}
+
+.team-founder-img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .team-partners {
+    padding: 6px 0;
+    margin-left: -60px;
+    *zoom: 1;
+    position: relative;
+  }
+  .team-partners:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .team-partners > .l-team-partner {
+    float: left;
+    padding-left: 60px;
+    width: 50%;
+  }
+  .team-partners > .l-team-partner:nth-of-type(2n+3) {
+    clear: left;
+  }
+  .team-partners > .l-team-partner.n3 {
+    clear: left;
+  }
+  .team-partners:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 52.5%;
+    border-left: 2px solid #fff;
+  }
+}
+
+.l-team-partner {
+  *zoom: 1;
+  text-align: center;
+}
+.l-team-partner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 400px) and (max-width: 599px) {
+  .l-team-partner {
+    *zoom: 1;
+    display: table;
+    text-align: left;
+  }
+  .l-team-partner:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .l-team-partner > .art-bd {
+    display: table-cell;
+    width: 90px;
+    margin: 0;
+  }
+  .l-team-partner > .art-bd > img,
+  .l-team-partner > .art-bd > .art {
+    width: 100%;
+    max-width: 100%;
+  }
+  .l-team-partner > .txt-bd {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+  }
+  .lt-ie8 .l-team-partner > .art-bd,
+  .lt-ie8 .l-team-partner > .txt-bd {
+    display: block;
+  }
+  .lt-ie8 .l-team-partner > .art-bd {
+    width: 90px;
+    float: left;
+  }
+  .lt-ie8 .l-team-partner > .txt-bd {
+    margin-left: 110px;
+  }
+}
+@media (min-width: 850px) {
+  .l-team-partner {
+    *zoom: 1;
+    display: table;
+    text-align: left;
+  }
+  .l-team-partner:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .l-team-partner > .art-bd {
+    display: table-cell;
+    width: 90px;
+    margin: 0;
+  }
+  .l-team-partner > .art-bd > img,
+  .l-team-partner > .art-bd > .art {
+    width: 100%;
+    max-width: 100%;
+  }
+  .l-team-partner > .txt-bd {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+  }
+  .lt-ie8 .l-team-partner > .art-bd,
+  .lt-ie8 .l-team-partner > .txt-bd {
+    display: block;
+  }
+  .lt-ie8 .l-team-partner > .art-bd {
+    width: 90px;
+    float: left;
+  }
+  .lt-ie8 .l-team-partner > .txt-bd {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 399px) {
+  .l-team-partner-img {
+    max-width: 90px;
+    margin: 0 auto 16px;
+  }
+}
+@media (min-width: 600px) and (max-width: 849px) {
+  .l-team-partner-img {
+    max-width: 90px;
+    margin: 0 auto 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-team-partner:first-child {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+  }
+}
+
+.team-partner-img {
+  max-width: 100%;
 }
 
 .mc-mod-dark {

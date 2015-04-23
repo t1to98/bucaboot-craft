@@ -26,10 +26,21 @@ $link-hover: darken($link, 8%);
 $highlight: $navy;
 $bg: $beige;
 
+
+// --------------------------------------------
+// Fonts
+// --------------------------------------------
+
 $sans:"Raleway",Arial,Helvetica,Verdana,sans-serif;
 $serif:Georgia,Times,Times New Roman,serif;
 $mono:"Courier New",Courier,mono;
 
+// Font Weights
+//$font-weight--light: 100; // not in use
+$font-weight--reg: 300;
+$font-weight--med: 500;
+$font-weight--bold: 700;
+//$font-weight--black: 900; // not in use
 
 
 // --------------------------------------------
@@ -54,6 +65,8 @@ $site-padding: 20px;
 
 $nav-padding: 20px;
 $nav-padding--small: 10px;
+
+$txt-max-width: 620px;
 
 
 

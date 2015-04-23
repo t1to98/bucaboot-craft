@@ -18,9 +18,17 @@
 }
 
 .txt-width {
-  max-width: 620px;
+  max-width: $txt-max-width;
   margin: 0 20px;
   @include mq(660px) {
+    margin: auto;
+  }
+}
+
+.content-width {
+  max-width: 940px;
+  margin: 0 20px;
+  @include mq(980px) {
     margin: auto;
   }
 }
@@ -103,7 +111,6 @@
     height: 700px;
   }
 
-
   @media (max-device-width: 700px) and
          (min-height: 300px) and
          (max-height: 499px) {
@@ -111,10 +118,15 @@
     top: 45px;
 
   }
+
   @media (max-device-width: 700px) and
          (min-height: 500px) and
          (max-height: 700px) {
     max-height: 620px;
     top: 45px;
   }
+}
+
+.page-hero-img {
+  max-width: 100%;
 }

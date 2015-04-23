@@ -5,7 +5,190 @@
 // =============================================
 
 
+$founder-layout-begins: 600px;
+$founder-layout-large: 850px;
+
 .article-text--about {
   color: #efefef;
 }
 
+.team {
+  background-color: $blue-dark;
+  color: #fff;
+}
+
+//
+// Team Typography
+//
+
+.team-founder-overline {
+  font: $font-weight--bold 14px $sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $blue;
+  margin-bottom: 4px;
+  @include mq($founder-layout-large) {
+    font-size: 15px;
+  }
+}
+
+.team-founder-title {
+  font: $font-weight--bold 21px $sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  @include mq($founder-layout-large) {
+    font-size: 24px;
+  }
+}
+
+.team-founder-text {
+  font: $font-weight--med 16px $sans;
+  line-height: 150%;
+  max-width: $txt-max-width;
+  @include mq($founder-layout-large) {
+    font-size: 18px;
+  }
+}
+
+.team-partner-overline {
+  font: $font-weight--bold 12px $sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $blue;
+  margin-bottom: 4px;
+  @include mq($founder-layout-large) {
+    //font-size: 13px;
+  }
+}
+
+.team-partner-title {
+  font: $font-weight--bold 17px $sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  @include mq($founder-layout-large) {
+    //font-size: 20px;
+  }
+}
+
+.team-partner-text {
+  font: $font-weight--med 14px $sans;
+  line-height: 150%;
+  max-width: $txt-max-width;
+  @include mq($founder-layout-large) {
+    //font-size: 16px;
+  }
+}
+
+
+//
+// Team Founder Layout
+//
+
+.team {
+  padding: 30px 0;
+  margin: 60px 0;
+}
+
+.team-founder {
+  padding-bottom: 40px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @include mq(
+    $founder-layout-begins) {
+    text-align: left;
+  };
+
+  @include mq(
+    $founder-layout-begins,
+    $founder-layout-large) {
+    @include pair(200px, 40px);
+  }
+  @include mq(
+    $founder-layout-large) {
+    @include pair(300px, 40px);
+  }
+}
+
+.l-team-founder-img {
+  @include mq(
+    $founder-layout-begins, max) {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+}
+
+.team-founder-img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.l-team-founder-text {
+
+}
+
+//
+// Team Partners Layout
+//
+
+.team-partners {
+  @include mq(
+    $founder-layout-begins) {
+
+    padding: 6px 0;
+    @include media-grid(2, 60px, ".l-team-partner");
+     @include layout-divider(
+      $left: 52.5%,
+      $divider: 2px solid #fff
+    );
+
+  } //mq
+}
+
+.l-team-partner {
+  @include pie-clearfix;
+  text-align: center;
+
+  @include mq(
+    400px,
+    $founder-layout-begins) {
+    @include pair(90px, 20px);
+    text-align: left;
+  }
+
+  @include mq(
+    $founder-layout-large) {
+    @include pair(90px, 30px);
+    text-align: left;
+  }
+}
+
+.l-team-partner-img {
+  @include mq(
+    400px, max) {
+    max-width: 90px;
+    margin: 0 auto 16px;
+  }
+
+  @include mq(
+    $founder-layout-begins,
+    $founder-layout-large) {
+    max-width: 90px;
+    margin: 0 auto 16px;
+  }
+}
+
+.l-team-partner:first-child {
+  @include mq($founder-layout-begins, max) {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+  }
+}
+
+.team-partner-img {
+  max-width: 100%;
+}
