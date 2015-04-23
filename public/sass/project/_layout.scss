@@ -4,6 +4,19 @@
 
 // =============================================
 
+
+.page--sectionFront {
+  padding-top: 100px;
+  // TODO: Change this when nav becomes fixed everywhere
+  .siteNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
 .txt-width {
   max-width: 620px;
   margin: 0 20px;
@@ -56,5 +69,49 @@
   @include mq($break-md) {
     font-size: 150px;
     bottom: -23px;
+  }
+}
+
+.page-h {
+  font: 100 em(50) $sans;
+  color: $blue-dark;
+  margin-bottom: 20px;
+  @include mq($break-sm) {
+    font-size: em(65);
+  }
+  @include mq($break-md) {
+    font-size: em(80);
+  }
+}
+
+.page--sectionFront:before {
+  z-index: -1;
+  @include psuedo;
+  @include svg("shape-half-circle--blue", none);
+  background-size: contain;
+  background-position: top left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .2;
+
+  // Fixes size jump that occurs on mobile devices
+  // due to viewport size change when navbar shrinks
+  @media (min-device-width: 300px) and
+         (min-height: 300px) and
+         (max-height: 499px) {
+    max-height: 420px;
+    background-position: 50% 0%;
+    top: 45px;
+
+  }
+  @media (min-device-width: 300px) and
+         (min-height: 500px) and
+         (max-height: 700px) {
+    max-height: 620px;
+    background-position: 50% 0%;
+    top: 45px;
   }
 }

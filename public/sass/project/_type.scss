@@ -49,7 +49,7 @@
 }
 
 .article-txt {
-  font: 300 em(18)/170% $sans;
+  font: 300 em(17)/170% $sans;
   @include mq($break-sm) {
     font-size:em(21);
   }
@@ -63,6 +63,13 @@
   > * + h3,
   > * + h4 {
     margin-top: 36px;
+  }
+
+  > h1 + *,
+  > h2 + *,
+  > h3 + *,
+  > h4 + * {
+    margin-top: 12px;
   }
 
 }

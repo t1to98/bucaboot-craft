@@ -1223,7 +1223,7 @@ body {
 }
 
 .article-txt {
-  font: 300 1.38462em/170% "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  font: 300 1.30769em/170% "Raleway", Arial, Helvetica, Verdana, sans-serif;
 }
 @media (min-width: 420px) {
   .article-txt {
@@ -1239,6 +1239,12 @@ body {
 .article-txt > * + h4 {
   margin-top: 36px;
 }
+.article-txt > h1 + *,
+.article-txt > h2 + *,
+.article-txt > h3 + *,
+.article-txt > h4 + * {
+  margin-top: 12px;
+}
 
 .caption-txt {
   font: 500 1.23077em/140% "Raleway", Arial, Helvetica, Verdana, sans-serif;
@@ -1252,6 +1258,17 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 2px 3px;
+}
+
+.page--sectionFront {
+  padding-top: 100px;
+}
+.page--sectionFront .siteNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .txt-width {
@@ -1316,6 +1333,57 @@ body {
   .section-topper-h {
     font-size: 150px;
     bottom: -23px;
+  }
+}
+
+.page-h {
+  font: 100 3.84615em "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  color: #1f2034;
+  margin-bottom: 20px;
+}
+@media (min-width: 420px) {
+  .page-h {
+    font-size: 5em;
+  }
+}
+@media (min-width: 768px) {
+  .page-h {
+    font-size: 6.15385em;
+  }
+}
+
+.page--sectionFront:before {
+  z-index: -1;
+  content: " ";
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('/img/icons/shape-half-circle--blue.png?1429720098');
+  background-image: url('/img/icons/shape-half-circle--blue.svg?1429749747'), none;
+  background-size: contain;
+  background-position: top left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .2;
+}
+.no-svg .page--sectionFront:before {
+  background-image: url('/img/icons/shape-half-circle--blue.png?1429720098');
+}
+@media (min-device-width: 300px) and (min-height: 300px) and (max-height: 499px) {
+  .page--sectionFront:before {
+    max-height: 420px;
+    background-position: 50% 0%;
+    top: 45px;
+  }
+}
+@media (min-device-width: 300px) and (min-height: 500px) and (max-height: 700px) {
+  .page--sectionFront:before {
+    max-height: 620px;
+    background-position: 50% 0%;
+    top: 45px;
   }
 }
 
@@ -1746,7 +1814,7 @@ a.link:hover {
   position: relative;
   padding-bottom: 75%;
   margin-bottom: 0;
-  background: transparent url('/img/slide-handles.jpg?1390284765') 50% 100% no-repeat;
+  background: transparent url('/img/slide-handles.png?1429678353') 50% 100% no-repeat;
   background-size: contain;
   border-bottom: 0;
 }

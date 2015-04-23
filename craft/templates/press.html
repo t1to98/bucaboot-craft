@@ -21,7 +21,7 @@
           <h1 class="section-h">Press<h1>
 
           <ul class="press-list">
-            {% for entry in craft.entries.section('press').find() %}
+            {% for entry in craft.entries.section('press') %}
               <li class="pressItem">
                 <a class="pressItem-link" href="{{ entry.externalLink }}" target="_blank">
                   <h2 class="h2 pressItem-h">{{ entry.title }}</h2>
