@@ -2129,26 +2129,23 @@ a.link:hover {
 }
 
 .press-list {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .pressItem-link {
   display: block;
   padding: 26px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  -webkit-transition: all .2s ease-in;
-          transition: all .2s ease-in;
-}
-.pressItem-link:hover {
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.pressItem-h {
-  color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .pressItem-txt {
-  color: #efefef;
+  -webkit-transition: all .2s ease-in;
+          transition: all .2s ease-in;
+}
+.pressItem-link:hover .pressItem-txt {
+  -webkit-transform: translateX(8px);
+      -ms-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .article-text--about {
