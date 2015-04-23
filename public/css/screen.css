@@ -1372,17 +1372,20 @@ body {
 .no-svg .page--sectionFront:before {
   background-image: url('/img/icons/shape-half-circle--blue.png?1429720098');
 }
-@media (min-device-width: 300px) and (min-height: 300px) and (max-height: 499px) {
+@media (min-height: 0px) and (max-height: 600px) {
+  .page--sectionFront:before {
+    height: 700px;
+  }
+}
+@media (max-device-width: 700px) and (min-height: 300px) and (max-height: 499px) {
   .page--sectionFront:before {
     max-height: 420px;
-    background-position: 50% 0%;
     top: 45px;
   }
 }
-@media (min-device-width: 300px) and (min-height: 500px) and (max-height: 700px) {
+@media (max-device-width: 700px) and (min-height: 500px) and (max-height: 700px) {
   .page--sectionFront:before {
     max-height: 620px;
-    background-position: 50% 0%;
     top: 45px;
   }
 }
