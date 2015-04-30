@@ -2188,26 +2188,28 @@ a.link:hover {
 }
 
 .team-founder-title {
-  font: 700 21px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  font: 500 21px "Raleway", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 @media (min-width: 850px) {
   .team-founder-title {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
 .team-founder-text {
   font: 500 16px "Raleway", Arial, Helvetica, Verdana, sans-serif;
-  line-height: 150%;
+  line-height: 160%;
   max-width: 620px;
 }
-@media (min-width: 850px) {
-  .team-founder-text {
-    font-size: 18px;
-  }
+.team-founder-text a {
+  color: #00bbd6;
+  text-decoration: underline;
+}
+.team-founder-text a:hover {
+  text-decoration: none;
 }
 
 .team-partner-overline {
@@ -2219,10 +2221,15 @@ a.link:hover {
 }
 
 .team-partner-title {
-  font: 700 17px "Raleway", Arial, Helvetica, Verdana, sans-serif;
+  font: 500 18px "Raleway", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
+}
+@media (min-width: 850px) {
+  .team-partner-title {
+    font-size: 21px;
+  }
 }
 
 .team-partner-text {
@@ -2337,7 +2344,8 @@ a.link:hover {
 @media (min-width: 600px) {
   .team-partners {
     padding: 6px 0;
-    margin-left: -60px;
+    margin-left: -30px;
+    margin-right: -30px;
     *zoom: 1;
     position: relative;
   }
@@ -2346,24 +2354,13 @@ a.link:hover {
     display: table;
     clear: both;
   }
-  .team-partners > .l-team-partner {
-    float: left;
-    padding-left: 60px;
-    width: 50%;
-  }
-  .team-partners > .l-team-partner:nth-of-type(2n+3) {
-    clear: left;
-  }
-  .team-partners > .l-team-partner.n3 {
-    clear: left;
-  }
   .team-partners:before {
     content: " ";
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 52.5%;
+    left: 50%;
     border-left: 2px solid #fff;
   }
 }
@@ -2413,6 +2410,14 @@ a.link:hover {
   }
   .lt-ie8 .l-team-partner > .txt-bd {
     margin-left: 110px;
+  }
+}
+@media (min-width: 600px) {
+  .l-team-partner {
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (min-width: 850px) {
