@@ -5,7 +5,7 @@
 @import "base";
 @import "project/variables";
 @import "project/project-mixins";
-
+@import "project/fonts";
 
 
 // --------------------------------------------
@@ -40,5 +40,7 @@
 @import "pages/tshirt";
 @import "pages/press";
 @import "pages/about";
+@import "pages/install";
+@import "pages/register";
 
 @import "project/mailchimp";

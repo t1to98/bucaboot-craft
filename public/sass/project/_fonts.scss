@@ -1,21 +1,75 @@
-/* !============================================= */
+// =============================================
 
-/* ! Custom Fonts					   			  */ 
+//  Fonts
 
-/* !============================================= */
+// =============================================
 
-@mixin font-import {
-
-// Follow this format, y'hear: 
-
-@font-face { 
-	font-family: "Raleway Bold"; 
-	src: font-url('raleway/raleway-medium-webfont.eot');
-	src: font-url('raleway/raleway-medium-webfont?#iefix') format('embedded-opentype'),
-		 font-url('raleway/raleway-medium-webfont.woff') format('woff'), 
-		 font-url('raleway/raleway-medium-webfont.ttf') format('truetype'), 
-		 font-url('raleway/raleway-medium-webfont.svg#webfontABgg4EO0') format('svg'); }	
+@mixin font-face(
+  $family-name,
+  $file-name,
+  $folder-name,
+  $font-weight: normal,
+  $font-style: normal
+  ){
+    @font-face {
+      $font-path: "../fonts/" + $folder-name + "/#{$file-name}";
+      font-family: "#{$family-name}";
+      src: url($font-path + '.eot');
+      src: local('☺'),
+         url($font-path + '.eot?iefix') format('eot'),
+         url($font-path + '.woff') format('woff'),
+         url($font-path + '.svg') format('svg'),
+         local('☺');
+      font-weight: $font-weight;
+      font-style: $font-style;
+  }
 }
 
-// Import custom fonts
-@include font-import;
+
+//
+// Eksell
+//
+
+@include font-face(
+  $family-name: Eksell Large,
+  $file-name: EksellDisplayWeb-Large,
+  $folder-name: eksell
+);
+
+@include font-face(
+  $family-name: Eksell Medium,
+  $file-name: EksellDisplayWeb-Medium,
+  $folder-name: eksell
+);
+
+@include font-face(
+  $family-name: Eksell Small,
+  $file-name: EksellDisplayWeb-Small,
+  $folder-name: eksell
+);
+
+
+//
+// Edmond
+//
+
+@include font-face(
+  $family-name: Edmond,
+  $font-weight: 300,
+  $file-name: edmondsans-regular-webfont,
+  $folder-name: edmond
+);
+
+@include font-face(
+  $family-name: Edmond,
+  $font-weight: 500,
+  $file-name: edmondsans-medium-webfont,
+  $folder-name: edmond
+);
+
+@include font-face(
+  $family-name: Edmond,
+  $font-weight: 700,
+  $file-name: edmondsans-bold-webfont,
+  $folder-name: edmond
+);

@@ -36,7 +36,7 @@ a.link {
   @include rgba-bg(black, .5);
   max-width: 650px;
   transition: all .2s ease-in;
-  @media (min-width: $break-sm) {
+  @media (min-width: $break__sm) {
     padding-top: 60px;
   }
 }
@@ -51,7 +51,7 @@ a.link {
   max-width: 70%;
   margin: auto;
   @include user-select;
-  @media (min-width: $break-sm) {
+  @media (min-width: $break__sm) {
     max-width: 400px;
     &.horiz {
       max-width: none;
@@ -66,7 +66,7 @@ a.link {
     padding-top: 45%;
     background: transparent image-url('icons/logo-wht-lg.png') 50% 50% no-repeat;
     @include background-size(100%);
-    @media (min-width: $break-sm) {
+    @media (min-width: $break__sm) {
       padding-top: 64%;
     }
     @media (min-width: 520px) {
@@ -88,7 +88,7 @@ a.link {
   font: 500 em(20)/140% $sans;
   text-align: center;
   margin-bottom: 40px;
-  @media (min-width: $break-sm) {
+  @media (min-width: $break__sm) {
     font-size: em(27);
   }
   > p {
@@ -150,7 +150,7 @@ a.link {
     top: -3px;
     @include box-shadow(shade($red, 30%) 0 6px 0);
   }
-  @media (min-width: $break-sm) {
+  @media (min-width: $break__sm) {
     font-size: em(23);
     padding: 20px 30px;
     margin-bottom: 100px;
@@ -182,11 +182,11 @@ a.link {
   padding: 60px $site-padding;
   border-bottom: 1px solid #e5e5e5;
 
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     padding: 80px 40px;
   }
 
-  @include mq($break-lg) {
+  @include mq($bp__lg) {
     padding: 100px 50px;
   }
 
@@ -201,12 +201,12 @@ a.link {
 .l-feature-cols,
 .l-feature-cols-flip {
   @extend .l-feature-inner;
-  @include mq($break-lg) {
+  @include mq($bp__lg) {
     max-width: 960px;
   }
 }
 
-@include mq($break-lg) {
+@include mq($bp__lg) {
   .l-feature-cols {
     @include ui-grid-2(50%, 50%, 0);
     .ui-block-1 {
@@ -255,7 +255,7 @@ a.link {
   .txt {
     display: block;
     margin-bottom: 15px;
-    @include mq($break-sm) {
+    @include mq($break__sm) {
       margin-bottom: 30px;
     }
   }
@@ -288,10 +288,10 @@ $bp--color-layout: 500px;
 .slide-colors {
   padding-top: 80px;
 
-  @include mq($break-sm, $break-lg) {
+  @include mq($break__sm, $bp__lg) {
     padding-bottom: 40px;
   }
-  @include mq($break-lg) {
+  @include mq($bp__lg) {
     padding-top: 100px;
     padding-bottom: 60px;
   }
@@ -414,7 +414,7 @@ $bp--color-layout: 500px;
   font: 500 em(21)/120% $sans;
   text-transform: uppercase;
   letter-spacing: 4px;
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size: em(28);
   }
 }

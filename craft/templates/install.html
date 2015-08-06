@@ -1,0 +1,280 @@
+{% extends "_layout" %}
+
+{% set bodyClasses = 'install-page' %}
+
+{% block content %}
+
+<div class="install__content site-width content--new">
+
+
+  <h1 class="page__h install__page-h">Installation</h1>
+
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- You'll Need              -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="materials materials--need">
+    <h4 class="section__h4">You'll Need</h4>
+
+    <div class="l-materials">
+
+      <!-- Screwdriver -->
+      <article class="l-material__item l-material__item--screwdriver">
+        <div class="material__icon material__icon--screwdriver">
+          {% include "inline-svg/install__screwdriver.svg" %}
+        </div>
+        <h5 class="install__h1">Screwdriver</h5>
+        <h6 class="install__h2">Phillips Head</h6>
+      </article> <!-- /l-material__item -->
+
+      <!-- Rear Rack -->
+      <article class="l-material__item l-material__item--rack">
+        <div class="material__icon material__icon--rack">
+          {% include "inline-svg/install__rack.svg" %}
+        </div>
+        <h5 class="install__h1">Rear Bike Rack</h5>
+      </article> <!-- /l-material__item -->
+
+      <!-- Your Head -->
+      <article class="l-material__item l-material__item--head">
+        <div class="material__icon material__icon--head">
+          {% include "inline-svg/install__head.svg" %}
+        </div>
+        <h5 class="install__h1">Your Head</h5>
+      </article> <!-- /l-material__item -->
+
+    </div> <!-- /l-materials -->
+  </section> <!-- materials--need -->
+
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- What's Included          -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="materials materials--included">
+    <h4 class="section__h4">What's Included</h4>
+    <div class="l-materials">
+
+      <!-- Brackets -->
+      <article class="l-material__item l-material__item--screwdriver">
+        <div class="material__icon material__icon--screwdriver">
+          {% include "inline-svg/install__brackets.svg" %}
+        </div>
+        <h5 class="install__h1">2 Brackets</h5>
+      </article> <!-- /l-material__item -->
+
+      <!-- Short Screws -->
+      <article class="l-material__item l-material__item--rack">
+        <div class="material__icon material__icon--rack">
+          {% include "inline-svg/install__screws.svg" %}
+        </div>
+        <h5 class="install__h1">4 Short Screws</h5>
+        <h6 class="install__h2">Recommended</h6>
+      </article> <!-- /l-material__item -->
+
+      <!-- Long Screws -->
+      <article class="l-material__item l-material__item--head">
+        <div class="material__icon material__icon--head">
+          {% include "inline-svg/install__screws--long.svg" %}
+        </div>
+        <h5 class="install__h1">4 Long Screws</h5>
+      </article> <!-- /l-material__item -->
+    </div> <!-- /l-materials -->
+
+    <article class="screw-note txt--new">
+      <strong>We recommend using the short screws</strong>, which provide a tighter fit and are more secure. Use the extra-long screws only if you are unable to fully secure the brackets using short&nbsp;screws.
+    </article>
+
+  </section> <!-- materials--included -->
+
+
+  <h1 class="page__h install__page-h">Diagram</h1>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Schematic                -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="materials__schematic">
+
+    <div class="l-schematic__txt-img">
+
+      <figure class="l-schematic__img">
+        {% include "inline-svg/install__bike.svg" %}
+<!--         <img class="schematic__img" src="{{site.theme.link}}/views/inline-svg/install__bike.png"> -->
+      </figure> <!-- /l-schematic__img -->
+
+      <figcaption class="l-schematic__txt">
+        <div class="schematic__screws">
+          <h3 class="install__h1">Screws</h3>
+          <p class="install__h2">Attached from&nbsp;inside Buca&nbsp;Boot</p>
+        </div> <!-- /schematic__screws -->
+        <div class="schematic__rack">
+          <h3 class="install__h1">Rack</h3>
+        </div> <!-- /schematic__rack -->
+        <div class="schematic__brackets">
+          <h3 class="install__h1">Brackets</h3>
+          <p class="install__h2">Placed below rack, above back wheel</p>
+        </div> <!-- /schematic__brackets -->
+      </figcaption> <!-- /l-schematic-txt -->
+
+    </div> <!-- l-schematic__text-img -->
+
+  </section> <!-- schematic -->
+
+
+
+
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Step-by-Step             -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <ol class="steps">
+
+    <h1 class="page__h install__page-h">Step-by-Step</h1>
+
+    <!-- Step 1 ~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <li class="step step--1">
+      <div class="step__number-mod step__number-mod--1">
+        <h3 class="step__number-h">
+          Step 1
+        </h3>
+        <p class="step__number-txt">
+          Grab your bike!
+        </p>
+      </div>
+
+      <div class="step__figures step__figures--1">
+        <figure class="step__figure step__figure-1">
+          <img class="step__img" src="img/install__bracket-1.jpg">
+        </figure>
+        <figure class="step__figure step__figure-2">
+          <img class="step__img" src="img/install__bracket-2.jpg">
+        </figure>
+      </div> <!-- /step__figures -->
+
+      <div class="step__detail txt-width--left">
+        <h2 class="h2--new step__detail-h">
+          Determine the Bracket&nbsp;Position
+        </h2>
+        <ol class="step__detail-list">
+          <li class="step__detail-item">
+            <span class="step__detail-counter">a</span>
+            <p class="step__detail-txt txt--new">
+              Look at your rack (each is a little different) to find a position where <strong>both holes are showing</strong>.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">b</span>
+            <p class="step__detail-txt txt--new">
+              Brackets can be positioned perpendicular or parallel to rack edges. <strong>Bump on bracket should face upward</strong>.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">c</span>
+            <p class="step__detail-txt txt--new">
+              <strong>Brackets go underneath your rack</strong> and hold Buca Boot in place on your bike.
+            </p>
+          </li>
+        </ol>
+      </div> <!-- /step__detail -->
+    </li> <!-- /step__detail-item -->
+
+    <!-- Step 2 ~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <li class="step step--2">
+      <div class="step__number-mod step__number-mod--2">
+        <h3 class="step__number-h">
+          Step 2
+        </h3>
+        <p class="step__number-txt">
+          Almost there!
+        </p>
+      </div>
+
+      <div class="step__figures step__figures--2">
+        <figure class="step__figure step__figure-1">
+          <img class="step__img" src="img/install__screw.jpg">
+        </figure>
+        <figure class="step__figure step__figure-2">
+          <img class="step__img" src="img/install__screwdriver.jpg">
+        </figure>
+      </div> <!-- /step__figures -->
+
+      <div class="step__detail txt-width--left">
+        <h2 class="h2--new step__detail-h">
+          Fasten Buca&nbsp;Boot to&nbsp;Bike&nbsp;Rack
+        </h2>
+        <ol class="step__detail-list">
+          <li class="step__detail-item">
+            <span class="step__detail-counter">a</span>
+            <p class="step__detail-txt txt--new">
+              Open Buca Boot. <strong>Remove black foam insert</strong> from base.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">b</span>
+            <p class="step__detail-txt txt--new">
+              <strong>Line up holes</strong> on base of Buca Boot with holes in mounting brackets.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">c</span>
+            <p class="step__detail-txt txt--new">
+              With the top open, attach each screw to the bracket. <strong>Screw head should be inside the Boot</strong>. Tighten with screwdriver.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">d</span>
+            <p class="step__detail-txt txt--new">
+              Place foam insert back in original position.
+            </p>
+          </li>
+        </ol>
+      </div> <!-- /step__detail -->
+    </li> <!-- /step-item -->
+
+    <!-- Step 3 ~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <li class="step step--3">
+      <div class="step__number-mod step__number-mod--3">
+        <h3 class="step__number-h">
+          Step 3
+        </h3>
+        <p class="step__number-txt">
+          Show us your stuff!
+        </p>
+      </div>
+
+      <div class="step__figures step__figures--3">
+        <figure class="step__figure step__figure-1">
+          <img class="step__img" src="img/install__photo.jpg">
+        </figure>
+      </div> <!-- /step__figures -->
+
+      <div class="step__detail txt-width--left">
+        <h2 class="h2--new step__detail-h">
+          Take a Photo &mdash; And Register Your Keys!
+        </h2>
+        <ol class="step__detail-list">
+          <li class="step__detail-item">
+            <span class="step__detail-counter">a</span>
+            <p class="step__detail-txt txt--new">
+              Snap a picture of your snazzy new Buca Boot right now! <strong>Share it with us</strong> on <a href="https://instagram.com/bucaboot/" target="_blank">Instagram @bucaboot</a>. You can also find us on <a href="https://twitter.com/bucaboot/" target="_blank">Twitter</a> &amp; <a href="https://facebook.com/bucaboot/" target="_blank">Facebook</a>.
+            </p>
+          </li>
+          <li class="step__detail-item">
+            <span class="step__detail-counter">b</span>
+            <p class="step__detail-txt txt--new">
+              <strong>Register your keys.</strong> Registration ensures that if you ever lose your keys, we can help you get a new set. You can <a href="/register">register right here</a>.
+            </p>
+          </li>
+        </ol>
+      </div> <!-- /step__detail -->
+    </li> <!-- /step-item -->
+
+  </ol> <!-- /steps -->
+
+
+</div> <!-- install__content site-width -->
+
+
+{% endblock content %}

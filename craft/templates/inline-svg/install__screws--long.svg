@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 150 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Long Screws</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.121,82.934 L142.871,82.934 L142.871,0.187 L0.121,0.187"></path>
+        <path id="path-3" d="M0.121,82.934 L142.871,82.934 L142.871,0.187 L0.121,0.187"></path>
+        <path id="path-5" d="M0.121,82.934 L142.871,82.934 L142.871,0.187 L0.121,0.187"></path>
+        <path id="path-7" d="M4,91.747 L146.75,91.747 L146.75,9 L131.746188,9 L4,9"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Long-Screws" sketch:type="MSArtboardGroup">
+            <path d="M90.237,13.313 C90.368,12.362 90.557,11.365 90.773,10.368 L97.509,9.187 C97.739,10.094 97.945,11.019 98.115,11.912 L90.237,13.313" id="Fill-1" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.937,19.142 L90.013,16.289 L98.591,14.771 C98.62,15.016 98.651,15.262 98.675,15.492 L98.716,17.585 L89.937,19.142" id="Fill-3" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.806,24.927 L89.876,22.067 L98.79,20.495 L98.851,23.324 L89.806,24.927" id="Fill-4" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.676,30.72 L89.75,27.866 L98.921,26.238 L98.981,29.078 L89.676,30.72" id="Fill-5" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.546,36.505 L89.606,33.665 L99.051,31.994 L99.111,34.818 L89.546,36.505" id="Fill-6" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.416,42.305 L89.476,39.45 L99.181,37.732 L99.252,40.556 L89.416,42.305" id="Fill-7" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.285,48.103 L89.345,45.244 L99.31,43.485 L99.386,46.314 L89.285,48.103" id="Fill-8" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.146,53.888 L89.215,51.028 L99.442,49.225 L99.512,52.05 L89.146,53.888" id="Fill-9" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M89.015,59.681 L89.085,56.827 L99.572,54.968 L99.642,57.808 L89.015,59.681" id="Fill-10" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M88.885,65.466 L88.954,62.626 L99.702,60.724 L99.772,63.548 L88.885,65.466" id="Fill-11" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M88.755,71.264 L88.825,68.411 L99.833,66.462 L99.902,69.287 L88.755,71.264" id="Fill-12" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <g id="Group-16" sketch:type="MSLayerGroup" transform="translate(4.000000, 9.000000)">
+                <mask id="mask-2" sketch:name="Clip 14" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-14"></g>
+                <path d="M77.368,80.049 L84.579,69.952 L84.679,65.204 L95.957,63.217 L96.118,69.952 L103.329,80.049 C105.017,80.108 105.192,82.992 103.329,82.934 L77.368,82.934 C75.321,82.873 75.381,80.108 77.368,80.049" id="Fill-13" fill="#0A0B09" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M10.503,4.313 C10.634,3.362 10.823,2.365 11.039,1.368 L17.775,0.187 C18.005,1.094 18.211,2.019 18.381,2.912 L10.503,4.313" id="Fill-15" fill="#0A0B09" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M14.203,19.142 L14.279,16.289 L22.857,14.771 C22.886,15.016 22.917,15.262 22.941,15.492 L22.982,17.585 L14.203,19.142" id="Fill-17" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M14.072,24.927 L14.142,22.067 L23.056,20.495 L23.117,23.324 L14.072,24.927" id="Fill-18" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.943,30.72 L14.017,27.866 L23.188,26.238 L23.248,29.078 L13.943,30.72" id="Fill-19" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.812,36.505 L13.872,33.665 L23.317,31.994 L23.377,34.818 L13.812,36.505" id="Fill-20" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.682,42.305 L13.742,39.45 L23.447,37.732 L23.518,40.556 L13.682,42.305" id="Fill-21" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.552,48.103 L13.612,45.244 L23.577,43.485 L23.653,46.314 L13.552,48.103" id="Fill-22" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.412,52.888 L13.481,50.028 L23.708,48.225 L23.778,51.05 L13.412,52.888" id="Fill-23" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.281,59.681 L13.351,56.827 L23.838,54.968 L23.908,57.808 L13.281,59.681" id="Fill-24" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.152,65.466 L13.221,62.626 L23.969,60.724 L24.039,63.548 L13.152,65.466" id="Fill-25" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M13.021,71.264 L13.091,68.411 L24.099,66.462 L24.168,69.287 L13.021,71.264" id="Fill-26" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <g id="Group-30" sketch:type="MSLayerGroup" transform="translate(4.000000, 9.000000)">
+                <mask id="mask-4" sketch:name="Clip 28" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-28"></g>
+                <path d="M1.634,80.049 L8.845,69.952 L8.945,65.204 L20.223,63.217 L20.384,69.952 L27.595,80.049 C29.283,80.108 29.458,82.992 27.595,82.934 L1.634,82.934 C-0.413,82.873 -0.353,80.108 1.634,80.049" id="Fill-27" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+                <path d="M124.447,4.313 C124.578,3.362 124.766,2.365 124.983,1.368 L131.719,0.187 C131.949,1.094 132.155,2.019 132.325,2.912 L124.447,4.313" id="Fill-29" fill="#0A0B09" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+            </g>
+            <path d="M128.147,19.142 L128.223,16.289 L136.801,14.771 C136.83,15.016 136.861,15.262 136.885,15.492 L136.925,17.585 L128.147,19.142" id="Fill-31" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M128.016,24.927 L128.086,22.067 L137,20.495 L137.061,23.324 L128.016,24.927" id="Fill-32" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.886,30.72 L127.96,27.866 L137.131,26.238 L137.191,29.078 L127.886,30.72" id="Fill-33" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.755,36.505 L127.815,33.665 L137.26,31.994 L137.32,34.818 L127.755,36.505" id="Fill-34" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.626,42.305 L127.686,39.45 L137.391,37.732 L137.462,40.556 L127.626,42.305" id="Fill-35" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.495,48.103 L127.555,45.244 L137.52,43.485 L137.596,46.314 L127.495,48.103" id="Fill-36" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.356,53.888 L127.425,51.028 L137.652,49.225 L137.722,52.05 L127.356,53.888" id="Fill-37" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.225,59.681 L127.295,56.827 L137.782,54.968 L137.852,57.808 L127.225,59.681" id="Fill-38" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M127.095,65.466 L127.164,62.626 L137.912,60.724 L137.982,63.548 L127.095,65.466" id="Fill-39" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M126.964,71.264 L127.034,68.411 L138.042,66.462 L138.111,69.287 L126.964,71.264" id="Fill-40" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <g id="Group-44" sketch:type="MSLayerGroup" transform="translate(4.000000, 9.000000)">
+                <mask id="mask-6" sketch:name="Clip 42" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-42"></g>
+                <path d="M115.577,80.049 L122.788,69.952 L122.888,65.204 L134.166,63.217 L134.327,69.952 L141.538,80.049 C143.226,80.108 143.401,82.992 141.538,82.934 L115.577,82.934 C113.53,82.873 113.59,80.108 115.577,80.049" id="Fill-41" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+                <path d="M48.713,4.313 C48.844,3.362 49.033,2.365 49.249,1.368 L55.985,0.187 C56.215,1.094 56.421,2.019 56.591,2.912 L48.713,4.313" id="Fill-43" fill="#0A0B09" sketch:type="MSShapeGroup" mask="url(#mask-6)"></path>
+            </g>
+            <path d="M52.413,19.142 L52.489,16.289 L61.067,14.771 C61.096,15.016 61.127,15.262 61.151,15.492 L61.192,17.585 L52.413,19.142" id="Fill-45" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M52.282,24.927 L52.352,22.067 L61.266,20.495 L61.327,23.324 L52.282,24.927" id="Fill-46" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M52.152,30.72 L52.226,27.866 L61.397,26.238 L61.457,29.078 L52.152,30.72" id="Fill-47" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M52.022,36.505 L52.082,33.665 L61.527,31.994 L61.587,34.818 L52.022,36.505" id="Fill-48" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.892,42.305 L51.952,39.45 L61.657,37.732 L61.728,40.556 L51.892,42.305" id="Fill-49" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.761,48.103 L51.821,45.244 L61.786,43.485 L61.862,46.314 L51.761,48.103" id="Fill-50" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.622,53.888 L51.691,51.028 L61.918,49.225 L61.988,52.05 L51.622,53.888" id="Fill-51" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.491,59.681 L51.561,56.827 L62.048,54.968 L62.118,57.808 L51.491,59.681" id="Fill-52" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.361,65.466 L51.43,62.626 L62.178,60.724 L62.248,63.548 L51.361,65.466" id="Fill-53" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <path d="M51.231,71.264 L51.301,68.411 L62.309,66.462 L62.378,69.287 L51.231,71.264" id="Fill-54" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+            <mask id="mask-8" sketch:name="Clip 56" fill="white">
+                <use xlink:href="#path-7"></use>
+            </mask>
+            <g id="Clip-56"></g>
+            <path d="M43.844,89.049 L51.055,78.952 L51.155,74.204 L62.433,72.217 L62.594,78.952 L69.805,89.049 C71.493,89.108 71.668,91.992 69.805,91.934 L43.844,91.934 C41.797,91.873 41.857,89.108 43.844,89.049" id="Fill-55" fill="#0A0B09" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,395 @@
+// =============================================
+
+// Installation Page
+
+// =============================================
+
+
+// --------------------------------------------
+// Variables
+// --------------------------------------------
+
+// Breakpoints
+$bp__material--sm: 450px;
+$bp__material--md: 650px;
+$bp__img-layout-starts: $bp__tablet--sm;
+$bp__schematic: 450px;
+
+
+
+// --------------------------------------------
+// Materials
+// --------------------------------------------
+
+.materials {
+  max-width: 720px;
+  margin: 0 0 60px;
+
+  @media (min-width: $bp__material--md) {
+    margin-left: 20px; // see also: `.step__detail`
+  }
+
+  @media (min-width: 760px) {
+    margin-left: 60px; // see also: `.step__detail`
+  }
+
+  @media (min-width: $bp__desktop) {
+    margin-left: 80px; // see also: `.step__detail`
+  }
+}
+
+.l-materials {
+  @include media-grid(
+  $num: 3,
+  $pad: 20px,
+  $target:'.l-material__item');
+
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media (min-width: $bp__material--md) {
+    @include media-grid(
+    $num: 3,
+    $pad: 60px,
+    $target:'.l-material__item');
+  }
+}
+
+.material__icon {
+  width: 90%;
+  max-width: 150px;
+  margin: auto;
+
+  @media (min-width: $bp__material--sm) {
+    width: 70%;
+  }
+}
+
+.install__h1,
+.install__h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+.install__h1 {
+  @include sans(14px, bold);
+  color: $blue-dk;
+
+  @media (min-width: $bp__material--sm) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $bp__material--md) {
+    font-size: 24px;
+  }
+}
+
+.install__h2 {
+  @include sans(13px, medium);
+  color: #999;
+  margin-top: 6px;
+
+  @media (min-width: $bp__material--sm) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $bp__material--md) {
+    font-size: 18px;
+  }
+}
+
+
+// --------------------------------------------
+// Schematic
+// --------------------------------------------
+
+.schematic {
+  position: relative;
+}
+
+.l-schematic__txt-img {
+  position: relative;
+  @include pie-clearfix;
+}
+
+.l-schematic__txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  @media (min-width: $bp__schematic) {
+    width: 20%;
+  }
+}
+
+.l-schematic__img {
+  padding-left: 36%;
+  margin: 0 -20px 0;
+
+  @media (min-width: $bp__schematic) {
+    padding-left: 27%;
+  }
+}
+
+.schematic__img {
+  max-width: 100%;
+}
+
+.schematic__screws,
+.schematic__rack,
+.schematic__brackets {
+  position: absolute;
+  max-width: 160px;
+  text-align: right;
+  right: 0;
+}
+
+.schematic__screws {
+  top: 3%;
+  @media (min-width: $bp__schematic) {
+    top: 5%;
+  }
+}
+
+.schematic__rack {
+  top: 34%;
+  @media (min-width: $bp__schematic) {
+    top: 36%;
+  }
+}
+
+.schematic__brackets {
+  top: 43%;
+  @media (min-width: $bp__schematic) {
+    top: 45%;
+  }
+}
+
+
+// --------------------------------------------
+// Step-by-Step
+// --------------------------------------------
+
+.steps {
+  @include reset(ol);
+}
+
+.step {
+  position: relative;
+  padding-top: 200px; // make room for step numbers
+}
+
+.step__number-mod {
+  position: absolute;
+  top: 65px;
+  left: 5%;
+  padding: 50px 20px;
+  border: 3px solid $red;
+  max-width: 150px;
+  text-align: center;
+
+  &:before,
+  &:after {
+    @include pseudo;
+    @include absolute-center(16px);
+    border-bottom: 3px solid $red;
+  }
+
+  &:before {
+    top: 20px;
+  }
+
+  &:after {
+    bottom: 20px;
+  }
+}
+
+.step__number-h {
+  @include serif(28px);
+  color: $red;
+  margin: 0 0 12px;
+}
+
+.step__number-txt {
+  @include sans(14px, medium);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $blue-dk;
+  margin: 0;
+}
+
+//
+// Images
+//
+
+.step__figures {
+  @include pie-clearfix;
+}
+
+.step__figure {
+  margin: 0;
+}
+
+.step__img {
+  max-width: 100%;
+}
+
+.step__figure + .step__figure {
+  @media (max-width: $bp__img-layout-starts) {
+    margin-top: 10px;
+  }
+}
+
+
+//
+// Details
+//
+
+.step__detail {
+  // markup includes txt-width class
+
+  @media (min-width: $bp__material--md) {
+    margin-left: 20px; // see also: `.materials`
+  }
+
+  @media (min-width: 760px) {
+    margin-left: 60px; // see also: `.materials`
+  }
+  @media (min-width: $bp__desktop) {
+    margin-left: 80px; // see also: `.materials`
+  }
+
+  .step--2 & {
+    @media (min-width: $bp__img-layout-starts) {
+      position: relative;
+      top: -30px;
+    }
+    @media (min-width: 900px) {
+      top: -100px;
+    }
+  }
+
+}
+
+.step__detail-h {
+  margin-top: 30px;
+  margin-bottom: 26px;
+
+  @media (min-width: $bp__phablet) {
+    margin-left: 38px; // matches `.step__detail-txt`
+  }
+}
+
+.step__detail-list {
+  @include reset(ol);
+}
+
+.step__detail-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.step__detail-counter {
+  position: absolute;
+  display: block;
+  @include size(20px);
+  padding: 2px 0;
+  background-color: $blue-dk;
+
+  @include sans(14px, bold);
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: $bp__phablet) {
+    font-size: 16px;
+    padding: 3px 0;
+    @include size(25px);
+  }
+}
+
+.step__detail-txt {
+  color: $blue-dk;
+  margin-left: 32px; // matches `.step__detail-h`
+
+  @media (min-width: $bp__phablet) {
+    margin-left: 38px; // matches `.step__detail-h`
+  }
+}
+
+//
+// 1. Determine Bracket Position
+//
+
+.step__figures--1 {
+  @media (min-width: $bp__img-layout-starts) {
+    @include media-grid(
+      $num: 2,
+      $pad: 20px,
+      $target:'.step__figure');
+
+    .step__figure-2 {
+      margin-top: -10%;
+    }
+  } // mq
+} // step__figures--1
+
+
+//
+// 2. Fasten to Rack
+//
+
+.step__number-mod--2 {
+  @media (min-width: $bp__img-layout-starts) {
+    right: 25%;
+    left: auto;
+  }
+}
+
+.step__figures--2 {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .step__figure-1 {
+    display: none;
+  }
+
+  @media (min-width: $bp__img-layout-starts) {
+    .step__figure-1,
+    .step__figure-2 {
+      display: block;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .step__figure-1 {
+      width: 70%;
+    }
+
+    .step__figure-2 {
+      width: 30%;
+      margin-top: 15%;
+    }
+  } // mq
+} // step__figures--1
+
+
+//
+// 3. Take a Photo!
+//
+
+.step__figures--3 {
+
+  @media (min-width: $bp__img-layout-starts) {
+    .step__figure-1
+    .step__figure-2 {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .step__figure-1 {
+      width: 70%;
+    }
+  } // mq
+} // step__figures--1

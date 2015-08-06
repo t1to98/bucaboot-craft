@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Bike Rack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.435,0.938 L134.526,0.938 L134.526,125.94 L0.435,125.94"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Bike-Rack" sketch:type="MSArtboardGroup">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(6.000000, 16.000000)">
+                <g id="Group-4" stroke="#1A1918" sketch:type="MSShapeGroup">
+                    <path d="M20.305,4.859 C20.305,4.859 106.386,1.596 115.664,2.812 C124.941,4.027 127.224,10.617 127.367,14.716 C120.05,25.576 77.482,87.261 77.482,87.261" id="Stroke-1" stroke-width="3.205"></path>
+                    <path d="M21.034,25.735 C21.034,25.735 111.385,22.323 120.663,23.538 C129.94,24.754 132.223,31.344 132.366,35.443 C125.049,46.302 76.461,121.693 76.461,121.693 M20.708,5.363 C10.496,5.719 2.378,10.597 2.575,16.258 C2.773,21.918 11.212,26.217 21.424,25.861" id="Stroke-3" stroke-width="4.273"></path>
+                </g>
+                <path d="M31.671,4.997 L34.904,24.124 L111.126,21.462 L107.892,2.335 L31.671,4.997" id="Fill-5" fill="#1A1918" sketch:type="MSShapeGroup"></path>
+                <path d="M112.552,4.31 L115.741,22.156 L120.353,21.995 L117.164,4.149 L112.552,4.31" id="Fill-6" fill="#1A1918" sketch:type="MSShapeGroup"></path>
+                <path d="M19.299,5.429 L22.532,24.556 L35.685,24.096 L32.452,4.97 L19.299,5.429" id="Fill-7" fill="#1A1918" sketch:type="MSShapeGroup"></path>
+                <path d="M26.597,12.399 C27.517,12.367 28.236,11.595 28.204,10.675 C28.172,9.756 27.401,9.036 26.481,9.068 C25.561,9.1 24.841,9.872 24.873,10.792 C24.906,11.712 25.677,12.431 26.597,12.399" id="Fill-8" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M28.34,20.676 C29.26,20.644 29.979,19.872 29.947,18.952 C29.915,18.033 29.144,17.313 28.224,17.345 C27.304,17.377 26.584,18.149 26.616,19.069 C26.649,19.989 27.42,20.708 28.34,20.676" id="Fill-9" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M40.471,11.787 L77.959,86.241" id="Stroke-10" stroke="#1A1918" stroke-width="2.564" sketch:type="MSShapeGroup"></path>
+                <g id="Group-15">
+                    <mask id="mask-2" sketch:name="Clip 12" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-12"></g>
+                    <path d="M30.785,25.806 L76.376,121.696" id="Stroke-11" stroke="#1A1918" stroke-width="3.205" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M78.615,90.322 C80.879,90.243 82.65,88.343 82.571,86.079 C82.492,83.815 80.593,82.044 78.329,82.123 C76.065,82.202 74.293,84.101 74.372,86.365 C74.451,88.629 76.351,90.401 78.615,90.322" id="Fill-13" fill="#1A1918" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M76.611,125.964 C78.875,125.885 80.646,123.985 80.567,121.721 C80.488,119.457 78.589,117.686 76.325,117.765 C74.061,117.844 72.289,119.743 72.368,122.007 C72.447,124.271 74.347,126.043 76.611,125.964" id="Fill-14" fill="#1A1918" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M50.269,10.76 L96.389,9.149 M50.515,17.806 L96.635,16.195" id="Stroke-16" stroke="#FFFFFF" stroke-width="2.136" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

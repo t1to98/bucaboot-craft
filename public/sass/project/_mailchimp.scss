@@ -45,7 +45,7 @@ $mc-height: 45px;
 .social-list {
   margin-bottom: 40px;
 
-  @media (min-width: $break-sm) {
+  @media (min-width: $break__sm) {
     margin-bottom: 60px;
   }
 }

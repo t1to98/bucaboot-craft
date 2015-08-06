@@ -27,11 +27,23 @@
 // Typography
 // --------------------------------------------
 
+.h2--new {
+  @include serif(38px);
+  color: $red;
+  @media (min-width: $bp__phablet) {
+    font-size: 54px;
+  }
+  @media (min-width: $bp__tablet) {
+    font-size: 68px;
+  }
+
+}
+
 .h2 {
   font: 300 em(28)/120% $sans;
   color: $navy;
   margin-bottom: 8px;
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size:em(36);
   }
 }
@@ -43,14 +55,22 @@
 .txt {
   font: 300 em(18)/150% $sans;
   color: #666;
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size:em(21);
+  }
+}
+
+.txt--new {
+  @include sans(18px);
+  color: $blue-dk;
+  @media (min-width: $bp__phablet) {
+    font-size: 22px;
   }
 }
 
 .article-txt {
   font: 300 em(17)/170% $sans;
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size:em(21);
   }
 
@@ -87,4 +107,52 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   @include text-shadow(rgba(0,0,0,.3) 1px 2px 3px);
+}
+
+
+
+// --------------------------------------------
+// Section Headers
+// --------------------------------------------
+
+.page__h {
+  display: inline-block;
+  position: relative;
+  margin-left: -10px;
+  margin-bottom: 50px;
+
+  @include sans(24px, bold);
+  color: $red;
+
+  @media (min-width: $bp__phablet) {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $bp__tablet) {
+    font-size: 36px;
+  }
+
+  // Underline effect
+  &:after {
+    @include psuedo(n -2px -2px -2px);
+    border-bottom: 4px solid $red;
+    @media (min-width: $bp__phablet) {
+      border-bottom-width: 6px;
+    }
+  }
+}
+
+.section__h4 {
+  position: relative;
+  margin-bottom: 24px;
+
+  @include sans(18px, bold);
+  color: $blue-dk;
+
+  &:after {
+    @include psuedo(n -2px -2px -2px);
+    border-bottom: 2px solid $blue-dk;
+  }
+
 }

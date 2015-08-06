@@ -5,6 +5,11 @@
 // =============================================
 
 
+.content--new {
+  padding-top: 60px;
+  margin-bottom: 120px;
+}
+
 .page--sectionFront {
   padding-top: 100px;
   // TODO: Change this when nav becomes fixed everywhere
@@ -25,6 +30,10 @@
   }
 }
 
+.txt-width--left {
+  max-width: $txt-max-width;
+}
+
 .content-width {
   max-width: 940px;
   margin: 0 20px;
@@ -41,12 +50,12 @@
   height: 120px;
   height: 25vh;
 
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     height: 300px;
     height: 30vh;
   }
 
-  @include mq($break-md) {
+  @include mq($bp__md) {
     height: 400px;
     height: 40vh;
   }
@@ -69,12 +78,12 @@
   color: #fff;
   opacity: .4;
 
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size: 120px;
     bottom: -18px;
   }
 
-  @include mq($break-md) {
+  @include mq($bp__md) {
     font-size: 150px;
     bottom: -23px;
   }
@@ -84,10 +93,10 @@
   font: 100 em(50) $sans;
   color: $blue-dark;
   margin-bottom: 20px;
-  @include mq($break-sm) {
+  @include mq($break__sm) {
     font-size: em(65);
   }
-  @include mq($break-md) {
+  @include mq($bp__md) {
     font-size: em(80);
   }
 }

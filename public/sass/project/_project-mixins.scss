@@ -49,3 +49,135 @@
     }
   }
 }
+
+
+// Fonts
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+@mixin serif(
+  $size: 16px,
+  $line-height: 1
+  ){
+
+  // Give us raw units
+  $raw-size: strip-units($size);
+  // Convert to px
+  $size: $raw-size + 'px';
+
+  font-size: #{$size};
+  font-weight: normal;
+  line-height: $line-height;
+  text-rendering: optimizeLegibility;
+
+  @if $raw-size > 46 {
+    font-family: $eksell-lg;
+  }
+  @elseif $raw-size > 26
+      and $raw-size < 46 {
+    font-family: $eksell-md;
+  }
+  @else {
+    font-family: $eksell-sm;
+  }
+
+} // serif
+
+
+@mixin sans(
+  $size: 16px,
+  $weight: $font-weight--reg
+  ){
+
+  // Give us raw units
+  $raw-size: strip-units($size);
+  // Convert to px
+  $size: $raw-size + 'px';
+
+  // Set font-weight variable
+  @if $weight == "reg"
+      or $weight == "regular"
+      or $weight == "300" {
+    $weight: $font-weight--reg;
+  }
+  @else if $weight == "med"
+        or $weight == "medium"
+        or $weight == "500" {
+    $weight: $font-weight--med;
+  }
+  @else if $weight == "b"
+        or $weight == "bold"
+        or $weight == "700" {
+    $weight: $font-weight--bold;
+  }
+
+  font-family: $edmond;
+  font-size: #{$size};
+  font-weight: $weight;
+
+  @if $raw-size > 30 {
+    text-rendering: optimizeLegibility;
+  }
+
+} // sans
+
+
+
+// Reset Element
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// FOR: Stripping the styles from default HTML elements
+//      such as an input, ul, li, a, h1, h2, h3, etc.
+// WHY: When using normalize, you might want to set
+//      an element to a baseline with no style applied
+// USE: @include reset(li);
+
+.reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background-color: transparent;
+}
+
+@mixin reset($el) {
+
+  $tag: (
+    ol: true,
+    ul: true,
+    li: true,
+    button: true,
+    input: true
+  );
+
+  @if map-has-key($tag, $el) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background-color: transparent;
+
+    @if $el == "input"
+     or $el == "button" {
+      box-shadow: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      &:focus {
+        outline: 0;
+      }
+    } // input
+
+    @if $el == "ul"
+     or $el == "ol" {
+      list-style: none;
+    }
+
+  } // map-has-key
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, the element `#{$el}` isn't recognized. "
+        + "Please make sure it is defined in the `reset` mixin.";
+  }
+
+} // reset

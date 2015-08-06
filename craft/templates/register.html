@@ -1,0 +1,99 @@
+{% extends "_layout" %}
+
+{% set bodyClasses = 'regsiter-page' %}
+
+{% block content %}
+
+<div class="reg__content site-width content--new">
+
+  <div class="reg__hgroup">
+    <h1 class="reg__h1">Thank You</h1>
+    <h2 class="reg__h2">
+      <span class="br">for buying </span>
+      <span class="br">the Buca&nbsp;Boot</span>
+    </h2>
+  </div> <!-- /reg__hgroup -->
+
+  <section class="reg__intro txt-width">
+    <h3 class="reg__intro-h">Register so you can ...</h3>
+
+    <ul class="reg__intro-list">
+      <li class="reg__intro-item">Replace your keys if the original set is&nbsp;lost</li>
+      <li class="reg__intro-item">Be the first to know about Buca&nbsp;Boot&nbsp;news</li>
+    </ul> <!-- /reg__intro-list -->
+
+  </section>
+
+  <figure class="reg__key-fig">
+    {% include "inline-svg/key-number.svg" %}
+    <figcaption class="reg__key-caption">
+      First, locate your key number
+    </figcaption>
+  </figure>
+
+  <form class="reg__form"
+        accept-charset="UTF-8"
+        action="https://formkeep.com/f/32f736f3a54b" method="POST">
+
+    <input type="hidden" name="utf8" value="✓">
+
+    <!-- Key Number -->
+    <div class="reg__key-mod">
+      <input class="reg__key-input reg__input"
+             id="reg__key-number"
+             name="reg__key-number"
+
+             placeholder="1234"
+             type="number"
+             maxlength="4"
+             tabindex="1">
+      <label for="reg__key-number"
+             class="reg__key-number reg__label">
+             Key Number
+      </label>
+    </div> <!-- /reg__key-input -->
+
+    <!-- Contact -->
+    <div class="reg__contact">
+
+      <div class="reg__name-mod">
+        <input class="reg__name-input reg__input"
+               id="name"
+               name="name"
+
+               placeholder="Full Name"
+               type="text"
+               tabindex="2">
+        <label for="name"
+               class="reg__name reg__label">
+               Name
+        </label>
+      </div> <!-- / reg__name-mod -->
+
+      <div class="reg__email-mod">
+        <input class="reg__email-input reg__input"
+               id="email"
+               name="email"
+
+               placeholder="name@email.com"
+               type="email"
+               tabindex="3">
+        <label for="email"
+               class="reg__email reg__label">
+               Email
+        </label>
+      </div> <!-- / reg__name-mod -->
+
+    </div> <!-- /reg__contact -->
+
+    <button class="reg__form-btn"
+            type="submit"
+            tabindex="4">
+      Submit
+    </button>
+
+  </form>
+
+</div> <!-- /reg__content site-width -->
+
+{% endblock content %}
