@@ -1851,7 +1851,7 @@ a.link:hover {
   background-color: #f04e30;
   cursor: pointer;
   color: #fff;
-  box-shadow: #a83621 0 3px 0;
+  box-shadow: #a83722 0 3px 0;
   border-radius: 12px;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 2px 3px;
   -webkit-user-select: none;
@@ -1864,7 +1864,7 @@ a.link:hover {
 }
 .btn-large:hover, .btn-large--light:hover {
   top: -3px;
-  box-shadow: #a83621 0 6px 0;
+  box-shadow: #a83722 0 6px 0;
 }
 @media (min-width: 420px) {
   .btn-large, .btn-large--light {
@@ -3225,6 +3225,10 @@ a.link:hover {
 .reg__form-btn:hover, .reg__form-btn:focus {
   color: #fffef2;
   background-color: #f04e30;
+}
+
+.mc-hidden-field {
+  display: none;
 }
 
 .mc-mod-dark {
